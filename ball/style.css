@@ -1,0 +1,37 @@
+* {
+    margin: 0;                               
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+	display: -webkit-flex;	
+	display: -moz-flex;	
+	display: -o-flex;	
+	display: -ms-flex;	
+	display: flex;	
+	flex-direction: column;
+	min-height: 100vh;
+}
+header, footer {
+	flex: 0;
+}
+main {
+	flex: 1;
+}
+.ball{
+    width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	background: #f00;
+	position: absolute;
+	bottom: 0;
+}
+
+@-webkit-keyframes bounce {
+	0%	{ bottom: 0; }
+	50%	{ bottom: 100px; }
+	100%	{ bottom: 0; }
+	}
+.ball:hover {
+	-webkit-animation: bounce 1s infinite ease;
+	}
