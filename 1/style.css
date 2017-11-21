@@ -1,0 +1,25 @@
+.container{
+    width: 400px;
+    height: 300px;
+    float: left;
+    margin: 40px;
+    background: #999;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 8px 15px rgba(0,0,0,.6);
+}
+.container::after{
+    content: ;
+        width: 400px;
+    height: 300px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -moz-radial-gradient(transparent, rgba(0,0,0,.7));
+}
+.container:hover::after{
+    opacity: 0;
+    
+}
